@@ -4,10 +4,14 @@ from configs.simulation_config import OVR_WEIGHTS, MATCH_STAMINA_SCALAR
 class Player:
     """Represents a tennis player with various skill attributes."""
 
-    def __init__(self, name, sp, sa, gs, ref, sta, strg, clt, country="USA", player_id=0, ovr=None):
+    def __init__(self, name, sp, sa, gs, ref, sta, strg, clt, country="USA", player_id=0, birth_date="2006-01-01",
+                 sab="M", ovr=None):
         self.id = player_id
         self.name = name
         self.country = country
+        self.sab = sab
+        self.birth_date = date.fromisoformat(birth_date)
+
         self.serve_power = sp
         self.serve_accuracy = sa
         self.groundstroke = gs
