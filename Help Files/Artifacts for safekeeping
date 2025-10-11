@@ -1,0 +1,37 @@
+Random players but no longer needed:
+
+# --- Original Player Archetypes (CLT set to Neutral 50) ---
+p_100_100 = Player("Elite Server (N)", ovr=90, sp=100, sa=100, fh=80, bh=80, ref=80, sta=80, strg=80, clt=50)
+p_75_75 = Player("Pro Server (N)", ovr=30, sp=75, sa=75, fh=30, bh=30, ref=30, sta=30, strg=30, clt=50)
+p_50_50 = Player("Average Server (N)", ovr=60, sp=50, sa=50, fh=60, bh=60, ref=60, sta=60, strg=60, clt=50)
+p_30_30 = Player("Beginner Server (N)", ovr=30, sp=30, sa=30, fh=30, bh=30, ref=30, sta=30, strg=30, clt=50)
+p_100_50 = Player("Dead Eye Server (N)", ovr=90, sp=50, sa=100, fh=80, bh=80, ref=80, sta=80, strg=80, clt=50)
+p_75_50 = Player("Conservative Server (N)", ovr=30, sp=50, sa=75, fh=30, bh=30, ref=30, sta=30, strg=30, clt=50)
+p_50_100 = Player("Wild Thing Server (N)", ovr=60, sp=100, sa=50, fh=60, bh=60, ref=60, sta=60, strg=60, clt=50)
+p_30_10 = Player("Beginner Soft Server (N)", ovr=30, sp=10, sa=30, fh=30, bh=30, ref=30, sta=30, strg=30, clt=50)
+
+# --- New Randomized Players for CLT Test ---
+# Tiers: 1. Elite (86-100), 2. Pro (71-85), 3. Challenger (51-70), 4. Futures (31-50), 5. Beginner (1-30)
+rand_elite_low = create_random_player("Elite (LCLT)", 86, 100, random.randint(1, 39))
+rand_elite_high = create_random_player("Elite (HCLT)", 86, 100, random.randint(61, 100))
+rand_pro_low = create_random_player("Pro (LCLT)", 71, 85, random.randint(1, 39))
+rand_pro_high = create_random_player("Pro (HCLT)", 71, 85, random.randint(61, 100))
+rand_avg_low = create_random_player("Average (LCLT)", 51, 70, random.randint(1, 39))
+rand_avg_high = create_random_player("Average (HCLT)", 51, 70, random.randint(61, 100))
+rand_futures_low = create_random_player("Futures (LCLT)", 31, 50, random.randint(1, 39))
+rand_futures_high = create_random_player("Futures (HCLT)", 31, 50, random.randint(61, 100))
+rand_beg_low = create_random_player("Beginner (LCLT)", 1, 30, random.randint(1, 39))
+rand_beg_high = create_random_player("Beginner (HCLT)", 1, 30, random.randint(61, 100))
+
+
+# Combined list of all archetype players
+all_players = [
+    p_100_100, p_75_75, p_50_50, p_30_30, p_100_50, p_75_50, p_50_100, p_30_10,
+    rand_elite_low, rand_elite_high,
+    rand_pro_low, rand_pro_high,
+    rand_avg_low, rand_avg_high,
+    rand_futures_low, rand_futures_high,
+    rand_beg_low, rand_beg_high
+]
+# Define a generic receiver for the test (a Pro level is a good standard)
+test_receiver = Player("Test Receiver", ovr=75, sp=75, sa=75, fh=75, bh=75, ref=75, sta=75, strg=75, clt=75)

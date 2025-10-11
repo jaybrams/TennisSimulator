@@ -1,0 +1,64 @@
+---
+### Training Archetypes
+
+#### Serve and Volley 🏃‍♂️➡️🏐
+Focuses on ending points quickly at the net, using a strong serve to set up an aggressive volley.
+* **Primary:** `Serve Power (sp)`, `Reflex (ref)`
+* **Secondary:** `Serve Accuracy (sa)`, `Clutch (clt)`
+* **Rubber Band:** `Groundstroke (gs)`, `Strength (strg)`, `Stamina (sta)`
+
+#### Serve Bot 🤖
+A specialist who aims to dominate with the serve alone, focusing on a high percentage of aces and unreturnable serves.
+* **Primary:** `Serve Power (sp)`, `Serve Accuracy (sa)`
+* **Secondary:** `Strength (strg)`, `Clutch (clt)`
+* **Rubber Band:** `Groundstroke (gs)`, `Reflex (ref)`, `Stamina (sta)`
+
+#### Baseline Aggressor 💪
+A modern power player who controls the game from the back of the court, hitting powerful groundstrokes to force errors or create winners.
+* **Primary:** `Groundstroke (gs)`, `Strength (strg)`
+* **Secondary:** `Serve Power (sp)`, `Stamina (sta)`
+* **Rubber Band:** `Serve Accuracy (sa)`, `Reflex (ref)`, `Clutch (clt)`
+
+#### Baseline Defender 🧱
+A "human backboard" who wins through consistency and endurance, forcing opponents into long rallies and waiting for them to make a mistake.
+* **Primary:** `Stamina (sta)`, `Groundstroke (gs)`
+* **Secondary:** `Reflex (ref)`, `Serve Accuracy (sa)`
+* **Rubber Band:** `Serve Power (sp)`, `Strength (strg)`, `Clutch (clt)`
+
+#### Primetime Player 🧠
+A mental giant who thrives in high-pressure situations, playing their best when the score is tight and the match is on the line.
+* **Primary:** `Clutch (clt)`, `Groundstroke (gs)`
+* **Secondary:** `Serve Accuracy (sa)`, `Reflex (ref)`
+* **Rubber Band:** `Serve Power (sp)`, `Strength (strg)`, `Stamina (sta)`
+
+#### Counter-Puncher 🥊
+A defensive specialist who excels at absorbing the opponent's power and redirecting it with precision, turning defense into instant offense.
+* **Primary:** `Reflex (ref)`, `Groundstroke (gs)`
+* **Secondary:** `Stamina (sta)`, `Serve Accuracy (sa)`
+* **Rubber Band:** `Serve Power (sp)`, `Strength (strg)`, `Clutch (clt)`
+
+#### All-Court Tactician ♟️
+A master strategist who uses a blend of consistency, placement, and endurance to construct points and out-maneuver opponents, rather than overpowering them.
+* **Primary:** `Stamina (sta)`, `Serve Accuracy (sa)`
+* **Secondary:** `Groundstroke (gs)`, `Reflex (ref)`
+* **Rubber Band:** `Serve Power (sp)`, `Strength (strg)`, `Clutch (clt)`
+
+#### Glass Cannon 💣
+This player's strategy is pure, unadulterated aggression. The goal is to hit a winner within the first few shots of every point, accepting a high number of unforced errors as the cost. It's a high-risk, high-reward style that aims to win matches quickly before stamina becomes a factor.
+* **Primary:** `Serve Power (sp)`, `Strength (strg)`
+* **Secondary:** `Groundstroke (gs)`, `Reflex (ref)`
+* **Rubber Band:** `Serve Accuracy (sa)`, `Stamina (sta)`, `Clutch (clt)`
+
+#### Iron Horse 🚂
+An unusual but powerful combination. This player has the endurance of a baseline defender but uses that energy to fuel a massive serve deep into a grueling 5-set match. They aim to wear down opponents mentally by never showing fatigue on their most important shot.
+* **Primary:** `Stamina (sta)`, `Serve Power (sp)`
+* **Secondary:** `Serve Accuracy (sa)`, `Groundstroke (gs)`
+* **Rubber Band:** `Reflex (ref)`, `Strength (strg)`, `Clutch (clt)`
+
+#### The Specialist 🎯
+This archetype is for the player who wants to build one, single, undeniable weapon at the expense of everything else. They might have a legendary forehand (`Strength`) but a mediocre backhand, or pinpoint serve accuracy (`Serve Accuracy`) with very little power. It's an unbalanced but potentially deadly build.
+* **Primary:** `Strength (strg)`, `Serve Accuracy (sa)`
+* **Secondary:** `Groundstroke (gs)`, `Clutch (clt)`
+* **Rubber Band:** `Serve Power (sp)`, `Reflex (ref)`, `Stamina (sta)`
+
+These archetypes create interesting strategic trade-offs. A "Glass Cannon" might dominate for two sets and then completely fall apart from fatigue, while an "Iron Horse" might be the opposite, starting slow but becoming unbeatable in the final set.
