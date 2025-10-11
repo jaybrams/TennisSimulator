@@ -1,0 +1,250 @@
+country_name,abbreviation,weight
+Afghanistan,AFG,2
+Albania,ALB,2
+Algeria,DZA,2
+American Samoa,ASM,2
+Andorra,AND,2
+Angola,AGO,2
+Anguilla,AIA,2
+Antarctica,ATA,2
+Antigua and Barbuda,ATG,2
+Argentina,ARG,5
+Armenia,ARM,2
+Aruba,ABW,2
+Australia,AUS,10
+Austria,AUT,2
+Azerbaijan,AZE,2
+Bahamas,BHS,2
+Bahrain,BHR,2
+Bangladesh,BGD,2
+Barbados,BRB,2
+Belarus,BLR,2
+Belgium,BEL,2
+Belize,BLZ,2
+Benin,BEN,2
+Bermuda,BMU,2
+Bhutan,BTN,2
+Bolivia,BOL,2
+"Bonaire, Sint Eustatius and Saba",BES,2
+Bosnia and Herzegovina,BIH,2
+Botswana,BWA,2
+Bouvet Island,BVT,2
+Brazil,BRA,2
+British Indian Ocean Territory,IOT,2
+Brunei Darussalam,BRN,2
+Bulgaria,BGR,2
+Burkina Faso,BFA,2
+Burundi,BDI,2
+Cabo Verde,CPV,2
+Cambodia,KHM,2
+Cameroon,CMR,2
+Canada,CAN,5
+Cayman Islands,CYM,2
+Central African Republic,CAF,2
+Chad,TCD,2
+Chile,CHL,2
+China,CHN,2
+Christmas Island,CXR,2
+Cocos Islands,CCK,2
+Colombia,COL,2
+Comoros,COM,2
+Congo,COD,2
+Congo,COG,2
+Cook Islands,COK,2
+Costa Rica,CRI,2
+Croatia,HRV,2
+Cuba,CUB,2
+Curaçao,CUW,2
+Cyprus,CYP,2
+Czechia,CZE,5
+Ivory Coast,CIV,2
+Denmark,DNK,2
+Djibouti,DJI,2
+Dominica,DMA,2
+Dominican Republic,DOM,2
+Ecuador,ECU,2
+Egypt,EGY,2
+El Salvador,SLV,2
+Equatorial Guinea,GNQ,2
+Eritrea,ERI,2
+Estonia,EST,2
+Eswatini,SWZ,2
+Ethiopia,ETH,2
+Falkland Islands,FLK,2
+Faroe Islands,FRO,2
+Fiji,FJI,2
+Finland,FIN,2
+France,FRA,10
+French Guiana,GUF,2
+French Polynesia,PYF,2
+French Southern Territories,ATF,2
+Gabon,GAB,2
+Gambia,GMB,2
+Georgia,GEO,2
+Germany,DEU,2
+Ghana,GHA,2
+Gibraltar,GIB,2
+Greece,GRC,2
+Greenland,GRL,2
+Grenada,GRD,2
+Guadeloupe,GLP,2
+Guam,GUM,2
+Guatemala,GTM,2
+Guernsey,GGY,2
+Guinea,GIN,2
+Guinea-Bissau,GNB,2
+Guyana,GUY,2
+Haiti,HTI,2
+Heard Island and McDonald Islands,HMD,2
+Holy See,VAT,2
+Honduras,HND,2
+Hong Kong,HKG,2
+Hungary,HUN,2
+Iceland,ISL,2
+India,IND,2
+Indonesia,IDN,2
+Iran,IRN,2
+Iraq,IRQ,2
+Ireland,IRL,2
+Isle of Man,IMN,2
+Israel,ISR,2
+Italy,ITA,10
+Jamaica,JAM,2
+Japan,JPN,5
+Jersey,JEY,2
+Jordan,JOR,2
+Kazakhstan,KAZ,2
+Kenya,KEN,2
+Kiribati,KIR,2
+Korea,PRK,2
+Korea,KOR,2
+Kuwait,KWT,2
+Kyrgyzstan,KGZ,2
+Lao People's Democratic Republic,LAO,2
+Latvia,LVA,2
+Lebanon,LBN,2
+Lesotho,LSO,2
+Liberia,LBR,2
+Libya,LBY,2
+Liechtenstein,LIE,2
+Lithuania,LTU,2
+Luxembourg,LUX,2
+Macao,MAC,2
+Madagascar,MDG,2
+Malawi,MWI,2
+Malaysia,MYS,2
+Maldives,MDV,2
+Mali,MLI,2
+Malta,MLT,2
+Marshall Islands,MHL,2
+Martinique,MTQ,2
+Mauritania,MRT,2
+Mauritius,MUS,2
+Mayotte,MYT,2
+Mexico,MEX,2
+Micronesia,FSM,2
+Moldova,MDA,2
+Monaco,MCO,2
+Mongolia,MNG,2
+Montenegro,MNE,2
+Montserrat,MSR,2
+Morocco,MAR,2
+Mozambique,MOZ,2
+Myanmar,MMR,2
+Namibia,NAM,2
+Nauru,NRU,2
+Nepal,NPL,2
+Netherlands,NLD,2
+New Caledonia,NCL,2
+New Zealand,NZL,2
+Nicaragua,NIC,2
+Niger,NER,2
+Nigeria,NGA,2
+Niue,NIU,2
+Norfolk Island,NFK,2
+Northern Mariana Islands,MNP,2
+Norway,NOR,2
+Oman,OMN,2
+Pakistan,PAK,2
+Palau,PLW,2
+"Palestine, State of",PSE,2
+Panama,PAN,2
+Papua New Guinea,PNG,2
+Paraguay,PRY,2
+Peru,PER,2
+Philippines,PHL,2
+Pitcairn,PCN,2
+Poland,POL,2
+Portugal,PRT,2
+Puerto Rico,PRI,2
+Qatar,QAT,2
+Republic of North Macedonia,MKD,2
+Romania,ROU,2
+Russian Federation,RUS,10
+Rwanda,RWA,2
+Réunion,REU,2
+Saint Barthélemy,BLM,2
+"Saint Helena, Ascension and Tristan da Cunha",SHN,2
+Saint Kitts and Nevis,KNA,2
+Saint Lucia,LCA,2
+Saint Martin,MAF,2
+Saint Pierre and Miquelon,SPM,2
+Saint Vincent and the Grenadines,VCT,2
+Samoa,WSM,2
+San Marino,SMR,2
+Sao Tome and Principe,STP,2
+Saudi Arabia,SAU,2
+Senegal,SEN,2
+Serbia,SRB,10
+Seychelles,SYC,2
+Sierra Leone,SLE,2
+Singapore,SGP,2
+Sint Maarten,SXM,2
+Slovakia,SVK,2
+Slovenia,SVN,2
+Solomon Islands,SLB,2
+Somalia,SOM,2
+South Africa,ZAF,2
+South Georgia and the South Sandwich Islands,SGS,2
+South Sudan,SSD,2
+Spain,ESP,10
+Sri Lanka,LKA,2
+Sudan,SDN,2
+Suriname,SUR,2
+Svalbard and Jan Mayen,SJM,2
+Sweden,SWE,5
+Switzerland,CHE,2
+Syrian Arab Republic,SYR,2
+Taiwan,TWN,2
+Tajikistan,TJK,2
+"Tanzania, United Republic of",TZA,2
+Thailand,THA,2
+Timor-Leste,TLS,2
+Togo,TGO,2
+Tokelau,TKL,2
+Tonga,TON,2
+Trinidad and Tobago,TTO,2
+Tunisia,TUN,2
+Turkey,TUR,2
+Turkmenistan,TKM,2
+Turks and Caicos Islands,TCA,2
+Tuvalu,TUV,2
+Uganda,UGA,2
+Ukraine,UKR,2
+United Arab Emirates,ARE,2
+United Kingdom,GBR,5
+United States of America,USA,10
+Uruguay,URY,2
+Uzbekistan,UZB,2
+Vanuatu,VUT,2
+Venezuela,VEN,2
+Viet Nam,VNM,2
+Virgin Islands,VGB,2
+Virgin Islands,VIR,2
+Wallis and Futuna,WLF,2
+Western Sahara,ESH,2
+Yemen,YEM,2
+Zambia,ZMB,2
+Zimbabwe,ZWE,2
+Åland Islands,ALA,2
+,,2
