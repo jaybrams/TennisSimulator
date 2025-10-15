@@ -35,3 +35,61 @@ all_players = [
 ]
 # Define a generic receiver for the test (a Pro level is a good standard)
 test_receiver = Player("Test Receiver", ovr=75, sp=75, sa=75, fh=75, bh=75, ref=75, sta=75, strg=75, clt=75)
+
+
+
+---- So far: 10/15/25 ----
+Of course. It's a great idea to have a high-level summary of all the design decisions and components we've built together. Here is a complete overview of our project so far.
+
+---
+## Project Summary: Tennis Simulator
+
+This document outlines the core components and design philosophy of the Tennis Simulator project.
+
+### 1. The Core Simulation Engine
+This is the "physics engine" of our game, responsible for simulating a single tennis match with a high degree of realism.
+
+* **Point Simulation:** A point unfolds in two phases:
+    * **Serve Phase:** The engine checks for an **Ace**, a **Fault**, or a **Double Fault**. This is a contest between the server's `Serve Power (sp)` and `Serve Accuracy (sa)`.
+    * **Rally Phase:** If the serve is returned, a rally begins. Each shot is assigned an **Actual Shot Quality (ASQ)** based on the striker's skills. The defender's ability to return the shot is tested against this ASQ. The rally continues until a player fails to make a return (a "Forced Error").
+* **Stamina & Fatigue:** We've implemented a dual-fatigue system:
+    * **Match Fatigue:** Accumulates over the entire match based on the length of each rally. It slowly degrades a player's physical skills (`sp`, `gs`, `ref`). A player's `Stamina (sta)` stat determines their resistance.
+    * **Rally Fatigue:** Accumulates shot-by-shot *within* a single long rally. It temporarily degrades a player's offensive shot quality, making errors more likely.
+* **Scoring & Rules:** The engine supports professional scoring rules, including best-of-3 or best-of-5 set matches, win-by-two games in a set, and 7-point tiebreaks at 6-6.
+
+### 2. The Game World & Data Foundation
+This is the collection of data and "builder" scripts that create a unique and persistent game world for each new save file.
+
+* **Player Generation:** At the start of a new game, a "World Generator" script creates a diverse roster of players.
+    * **Realistic Distribution:** It creates players of various ages and then assigns them a probable **Tier** (e.g., a 17-year-old is likely a "Futures" player, while a 28-year-old could be "Elite"). This ensures a believable world.
+    * **Core Attributes:** Each player has a unique `player_id`, `name`, `country`, `sab` (Sex Assigned at Birth), and a `birth_date` used for dynamic age calculation.
+* **Data Files:** The world is built from several core data files located in the `data/` folder:
+    * **`countries_weighted.csv`:** A list of world countries, weighted to ensure a realistic distribution of player nationalities.
+    * **`names.csv`:** A large database of thousands of first and last names, localized by country, generated using the `Faker` library.
+    * **`players.csv`:** The final output, containing the full roster of players for a new game world.
+* **Tournament Database:** The annual schedule is built from a database of tournaments stored in the `configs/` folder.
+    * **Pro Tour:** A mix of **Fixed** events (Grand Slams, Masters) and **Rotating** events (500s, 250s) that can be swapped out to create variety each year.
+    * **Challenger Tour:** A large pool of named, rotating events that are randomly selected each week.
+    * **Futures Tour:** An infinite number of **generic** tournaments (e.g., "USA F15") are created on-the-fly to provide a sense of scale and progression for low-ranked players.
+
+### 3. Career Mode & Game Loop
+This is the design for the main career mode, which revolves around a central `GameSession` class and a weekly game loop.
+
+* **The `GameSession` Class:** The "brain" of a save file. It loads the players, generates the yearly calendar, and manages the current game state (like the date).
+* **The Calendar System:** The game progresses week by week using Python's `datetime` library for calendar accuracy, allowing for immersive events like birthdays.
+* **Weekly Player Actions:** The core gameplay involves making decisions each week. We've designed four pillars for these actions:
+    1.  **On-Court Actions:** `Play in a Tournament` or `Focused Training`.
+    2.  **Brand Management:** Interacting with **Fans** and the **Press** to build a player's brand, which influences fame and sponsorship deals.
+    3.  **Career Management:** Hiring and managing a **Staff** (Coach, Physio, Agent) to provide specialized bonuses and unlock new opportunities.
+    4.  **The "Office":** A hub for long-term planning, such as `Tournament Registration`, `Sponsorship Negotiation`, and scheduling vacations.
+
+### 4. Player Progression
+This is the system that governs how a player's skills improve over their career, designed to be realistic and avoid "super players."
+
+* **Age Curve:** A player's ability to improve is tied to their age. They learn fastest in their "Peak Development" years (19-23) and eventually enter a "Decline" phase (30+) where skills naturally decay.
+* **Training Archetypes:** The user guides development by choosing a training focus (e.g., "Baseline Aggressor," "Serve and Volley"). This determines *which* skills get the most benefit from training.
+* **No Hard Caps:** A player's ultimate potential is not limited by pre-set caps on individual skills, but by a "soft cap" on the total number of skill points they can gain over their entire career, combined with the natural limits of the aging curve.
+
+### 5. Version Control & UI
+* **Version Control:** We've established a professional workflow using **Git** and **GitHub**. All new features are developed on separate **feature branches** to keep the `main` branch stable. We use a `.gitignore` file to exclude generated files and environment folders from the repository.
+* **User Interface (UI):** We've discussed how the UI will be a separate "presentation layer" that interacts with our simulation engine. We prototyped a simple menu using **Tkinter** and established that a more powerful framework like **PyQt/PySide** would be the best fit for a data-heavy management game.

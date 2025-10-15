@@ -1,5 +1,6 @@
 # players.py
 from configs.simulation_config import OVR_WEIGHTS, MATCH_STAMINA_SCALAR
+from datetime import date
 
 class Player:
     """Represents a tennis player with various skill attributes."""
@@ -12,6 +13,7 @@ class Player:
         self.sab = sab
         self.birth_date = date.fromisoformat(birth_date)
 
+        # Core Skills
         self.serve_power = sp
         self.serve_accuracy = sa
         self.groundstroke = gs
@@ -19,15 +21,21 @@ class Player:
         self.stamina = sta
         self.strength = strg
         self.clutch = clt
+
         if ovr is None:
             self.overall = self._calculate_ovr()
         else:
             self.overall = ovr
+
+        # --- NEW: Player Status Attributes ---
+        self.energy = 100.0  # Start fully rested
+        self.match_form = 0.0  # Start at a neutral baseline
+
         # Match-specific state variables
-        self.fatigue = 0  # This will accumulate over the match
-        self.current_score = "0"
+        self.fatigue = 0
         self.games_won = 0
         self.sets_won = 0
+        self.schedule = {}
 
     def get_skill(self, skill_name: str) -> float:
         """Returns the effective skill value, accounting for match fatigue."""
